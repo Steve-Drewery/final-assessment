@@ -58,7 +58,7 @@ At a high level, this application is for users who want to leverage digital tool
 | Deployment                | Heroku 
 
 # Dataflow Diagram
-![Dataflowdiagram](docs\dataflow-diagram.png)
+![Dataflowdiagram](./docs/dataflow-diagram.png)
 
 # Application Architecture Diagram
 ![Architecturediagram](docs\architecture-diagram.png)
