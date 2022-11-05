@@ -65,14 +65,25 @@ At a high level, this application is for users who want to leverage digital tool
 
 # User Stories
 - As a casual runner, I would like to be able to keep track of my previous run times so I can try to beat my time on my next run.
+    > Revised outlook: As a casual runner, I would also like to save the distance I ran so I can track my progress accurately.
 - As a competitive person, I would like to be able to share my workout with friends so we can compete against each other.
+    > Revised outlook: As a competitive person I would also like to be able to send my friends messages so I can invite them to workout with me.
 - As a gym junkie, I would like to be able to log complete workouts with reps/sets so I can improve next session.
+    > Revised outlook: As a gym junkie, I would also like to have reminders showing what I logged last year/month so I can be motivated with my progress.
 - As a bodybuilder, I would like to be able to post photos to a live feed so I can promote my physique.
+    > Revised outlook: As a body builder, I would also like to be able to post videos so I can share my posing.
 - As a world class athlete, I would like to be able to compete against people around the world from my hometown so I can show everyone I am the best.
+    > Revised outlook: As a world class athlete I would also like to be informed on any other world class athletes that are in my area so I can train with them.
 - As a local runner, I would like to be able to track my location so I can keep track of how far I have run.
+    > Revised outlook: As a local runner I would also like to be able to track my steps so I can inform my coach.
 - As someone who struggles with motivation, I would like to have a reward system for reaching  my goals so I can motivate myself through positive reinforcement.
+
 - As a busy business man, I would like a reminder or notification system to show when my friends workout and when my previous workout was so I can keep in touch with friends and keep track of my fitness.
+
 - As a dietitian, I would like to be able to keep track of how many calories I am burning throughout a workout so I can program my diet more efficiently.
+    > Revised outlook: As a dietitian I would also like to be able to see other peoples workouts such as clients and friends so I can help them reach their goals.
+- As someone with a health condition that is exacerbated by poor physical fitness, I would like to be able to track my physical activity to ensure I am maintaining a baseline level of fitness.
+    > Revised outlook: As someone with a health condition that is exacerbated by poor physical fitness I would also like to be able to log my pedometer to track my step count accurately.
 
 # Wireframes
 ![Homepagedesktop](./docs/homepage-desktop.png)
