@@ -86,21 +86,37 @@ At a high level, this application is for users who want to leverage digital tool
     > Revised outlook: As someone with a health condition that is exacerbated by poor physical fitness I would also like to be able to log my pedometer to track my step count accurately.
 
 # Wireframes
+### Home Desktop
 ![Homepagedesktop](./docs/homepage-desktop.png)
+### Home Tablet/Phone
 ![Homepagetablet](./docs/homepage-tablet-phone.png)
+### Sign in Desktop
 ![Signindesktop](./docs/signin-desktop.png)
+### Sign in Tablet/Phone
 ![Signintablet](./docs/signin-tablet-phone.png)
+### Sing up Desktop
 ![Signupdesktop](./docs/signup-desktop.png)
+### Sign up Tablet/Phone
 ![Signuptablet](./docs/signup-tablet-phone.png)
+### Home portal Desktop
 ![Homeportaldesktop](./docs/portal-home-desktop.png)
+### Home portal Tablet/Phone
 ![Homeportaltablet](./docs/portal-home-tablet-phone.png)
+### Add workout Desktop
 ![Addworkoutdesktop](./docs/add-workout-desktop.png)
+### Add workout Tablet/Phone
 ![Addworkouttablet](./docs/addworkout-tablet-phone.png)
+### Ladder Desktop
 ![Ladderdesktop](./docs/monthly-ladder-desktop.png)
+### Ladder Tablet/Phone
 ![Laddertablet](/./docs/monthly-ladder-tablet-phone.png)
+### Trophies Desktop
 ![Trophiesdesktop](./docs/trophies-desktop.png)
+### Trophies Tablet/Phone
 ![Trophiestablet](./docs/trophies-tablet-phone.png)
+### Goals Desktop
 ![Goalsdesktop](./docs/weekly-goal-desktop.png)
+### Goals Tablet/Phone
 ![Goalstablet](./docs/weekly-goal-tablet.png)
 
 
