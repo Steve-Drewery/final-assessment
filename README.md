@@ -61,7 +61,7 @@ At a high level, this application is for users who want to leverage digital tool
 ![Dataflowdiagram](./docs/dataflow-diagram.png)
 
 # Application Architecture Diagram
-![Architecturediagram](docs\architecture-diagram.png)
+![Architecturediagram](docs/architecture-diagram.png)
 
 # User Stories
 - As a casual runner, I would like to be able to keep track of my previous run times so I can try to beat my time on my next run.
