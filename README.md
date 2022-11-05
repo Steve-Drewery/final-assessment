@@ -75,20 +75,24 @@ At a high level, this application is for users who want to leverage digital tool
 - As a dietitian, I would like to be able to keep track of how many calories I am burning throughout a workout so I can program my diet more efficiently.
 
 # Wireframes
-![Addworkoutdesktop](./docs/add-workout-desktop.png)
-![Addworkouttablet](./docs/addworkout-tablet-phone.png)
 ![Homepagedesktop](./docs/homepage-desktop.png)
 ![Homepagetablet](./docs/homepage-tablet-phone.png)
-![Ladderdesktop](./docs/monthly-ladder-desktop.png)
-![Laddertablet](/./docs/monthly-ladder-tablet-phone.png)
-![Homeportaldesktop](./docs/portal-home-desktop.png)
-![Homeportaltablet](./docs/portal-home-tablet-phone.png)
 ![Signindesktop](./docs/signin-desktop.png)
 ![Signintablet](./docs/signin-tablet-phone.png)
 ![Signupdesktop](./docs/signup-desktop.png)
-![Signupdesktop](./docs/signup-tablet-phone.png)
+![Signuptablet](./docs/signup-tablet-phone.png)
+![Homeportaldesktop](./docs/portal-home-desktop.png)
+![Homeportaltablet](./docs/portal-home-tablet-phone.png)
+![Addworkoutdesktop](./docs/add-workout-desktop.png)
+![Addworkouttablet](./docs/addworkout-tablet-phone.png)
+![Ladderdesktop](./docs/monthly-ladder-desktop.png)
+![Laddertablet](/./docs/monthly-ladder-tablet-phone.png)
 ![Trophiesdesktop](./docs/trophies-desktop.png)
 ![Trophiestablet](./docs/trophies-tablet-phone.png)
+![Goalsdesktop](./docs/weekly-goal-desktop.png)
+![Goalstablet](./docs/weekly-goal-tablet.png)
+
+
 
 # Trello Board
 We've separated the build into Part A tasks, and Part B tasks. We've also further split out Part B into Front End and Back End lists. We've agreed that one team member will be primarily responsible for building the React application, while the other will be largely dedicated to the Rails app. To ensure clarity on what stage of the build each of us is up to, we have agreed to move the cards that we're currently working on into our respective "Working On..." lists as we progress through the project. 
