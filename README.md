@@ -7,9 +7,9 @@ The application is designed to help users keep a record of their workouts, as we
 
 ## FEATURES/FUNCTIONALITY
 - User Management
-    > The ability to create a user account, as well as sign in, and sign out will be implemented using functionality made available by the Ruby Gem Devise. 
-- Authorisation
-    > Devise also allows us to segment functionality based on user authentication (e.g only members can access portal, create workouts, etc)
+    > The ability to create a user account, as well as sign in, and sign out will be implemented by updating/reading our User model and generating JSON Web Tokens using the JWT gem. 
+- Authorisation 
+    > JWT also allows us to implement authorisation in the application, by only allowing those users that have been authenticated with JWT to access protected routes. 
 - Workouts
     >Add workout records to your account (including type, duration, distance, date, etc)
 
@@ -53,7 +53,7 @@ At a high level, this application is for users who want to leverage digital tool
 | Programming Language      | Ruby 2.7.5 
 | Server Side Framework     | Rails 6.1.6   
 | Testing                   | Rspec
-| Gems                      | Devise 4.8 
+| Gems                      | JWT
 | DBMS                      | Postgresql   
 | Deployment                | Heroku 
 
@@ -75,22 +75,23 @@ At a high level, this application is for users who want to leverage digital tool
 - As a dietitian, I would like to be able to keep track of how many calories I am burning throughout a workout so I can program my diet more efficiently.
 
 # Wireframes
-![Addworkoutdesktop](docs\add-workout-desktop.png)
-![Addworkouttablet](docs\addworkout-tablet-phone.png)
-![Homepagedesktop](docs\homepage-desktop.png)
-![Homepagetablet](docs\homepage-tablet-phone.png)
-![Ladderdesktop](docs\monthly-ladder-desktop.png)
-![Laddertablet](docs\monthly-ladder-tablet-phone.png)
-![Homeportaldesktop](docs\portal-home-desktop.png)
-![Homeportaltablet](docs\portal-home-tablet-phone.png)
-![Signindesktop](docs\signin-desktop.png)
-![Signintablet](docs\signin-tablet-phone.png)
-![Signupdesktop](docs\signup-desktop.png)
-![Signupdesktop](docs\signup-tablet-phone.png)
-![Trophiesdesktop](docs\trophies-desktop.png)
-![Trophiestablet](docs\trophies-tablet-phone.png)
+![Addworkoutdesktop](./docs/add-workout-desktop.png)
+![Addworkouttablet](./docs/addworkout-tablet-phone.png)
+![Homepagedesktop](./docs/homepage-desktop.png)
+![Homepagetablet](./docs/homepage-tablet-phone.png)
+![Ladderdesktop](./docs/monthly-ladder-desktop.png)
+![Laddertablet](/./docs/monthly-ladder-tablet-phone.png)
+![Homeportaldesktop](./docs/portal-home-desktop.png)
+![Homeportaltablet](./docs/portal-home-tablet-phone.png)
+![Signindesktop](./docs/signin-desktop.png)
+![Signintablet](./docs/signin-tablet-phone.png)
+![Signupdesktop](./docs/signup-desktop.png)
+![Signupdesktop](./docs/signup-tablet-phone.png)
+![Trophiesdesktop](./docs/trophies-desktop.png)
+![Trophiestablet](./docs/trophies-tablet-phone.png)
 
 # Trello Board
-
-![Trello1](docs\trello-board.png)
-![Trello2](docs\trello-board-2.png)
+We've separated the build into Part A tasks, and Part B tasks. We've also further split out Part B into Front End and Back End lists. We've agreed that one team member will be primarily responsible for building the React application, while the other will be largely dedicated to the Rails app. To ensure clarity on what stage of the build each of us is up to, we have agreed to move the cards that we're currently working on into our respective "Working On..." lists as we progress through the project. 
+![Trello1](./docs/trello-shot-1.png)
+![Trello2](./docs/trello-shot-2.png)
+![Trello3](./docs/trello-shot-3.png)
