@@ -166,3 +166,4 @@ Initially we separated the build into Part A tasks, and Part B tasks. We also fu
 ![Trello5](./docs/trello-shot2.png)
 ![Trello6](./docs/trello-shot3.png)
 ![Trello7](./docs/trello-shot4.png)
+![Trello8](./docs/trello-shot5.png)
