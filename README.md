@@ -1,15 +1,40 @@
 # **Fitalytics**
 
+# Links
+### [Deployed Application](https://fitalytics.netlify.app/)
+### [Rails API Github Repo](https://github.com/Steve-Drewery/fitalytics-api)
+### [React Frontend Github Repo](https://github.com/connorca22/fitalytics)
+
+# Instructions for running locally
+### 1) Clone the react front end directory 
+### 2) Open directory and install dependencies
+`npm install` 
+### 3) In `config>api.js` change the axios baseURL to http://localhost:3000
+### 4) Start the development server (localhost:3001 by default)
+`npm start` 
+
+### 5) Clone the rails back end directory 
+### 6) Open directory and install gems
+`bundle install` 
+### 7) Create the postgresql database, migrate it, and seed it (depending on your OS you may need to populate credential and setting fields in database.yml to do this)
+`rails db:create && rails db:migrate && rails db:seed`
+
+### 9) Update the `cors.rb` file to accept calls from http://localhost:3001 
+
+### 10) Boot the rails server (defaults to localhost:3000) 
+
+### 11) Done! Now the react and rails applications will be able to communicate. 
+
 # Description
 
 ## Purpose
-The application is designed to help users keep a record of their workouts, as well as achieve their fitness goals. It does this by allowing users to create records with details of each workout they undertake, view the details of historical workout records, set and meet weekly goals, earn trophies based on milestones, and compete to climb the overall monthly ladders (based on number of workouts). 
+The application is designed to help users keep a record of their workouts, as well as achieve their fitness goals. It does this by allowing users to create records with details of each workout they undertake, view the details of historical workout records, set and meet weekly goals, and compete to climb the overall user ladders (based on number of workouts completed). 
 
 ## FEATURES/FUNCTIONALITY
 - User Management
     > The ability to create a user account, as well as sign in, and sign out will be implemented by updating/reading our User model and generating JSON Web Tokens using the JWT gem. 
 - Authorisation 
-    > JWT also allows us to implement authorisation in the application, by only allowing those users that have been authenticated with JWT to access protected routes. 
+    > JWT also allows us to implement authorisation in the application, by only allowing those users that have been authenticated with JWT to access protected routes (protected routes set up with react router)
 - Workouts
     >Add workout records to your account (including type, duration, distance, date, etc)
 
@@ -19,13 +44,9 @@ The application is designed to help users keep a record of their workouts, as we
 
     >Your total number of weekly workouts will be displayed in your user portal (i.e "2/4 workouts completed this week")  
 - Ladder
-    >View a table ordered by how many workouts app users have completed in a given month. 
+    >View a table ordered by how many workouts app users have completed. 
 
-    Your position on this ladder will be displayed in your user portal (i.e You are 23/100 in the monthly ladder!) 
-- Trophies
-    >Earn trophies by completing milestones (i.e Reach #1 on overall ladder)
-
-    >Trophies will be displayed in the Trophies page of the user portal. 
+    Your position on this ladder will be displayed in your user portal (i.e You are 23/100 in the user ladder!) 
 
 ## Target Audience
 At a high level, this application is for users who want to leverage digital tools to achieve their fitness goals. This could apply to: 
@@ -110,19 +131,38 @@ At a high level, this application is for users who want to leverage digital tool
 ![Ladderdesktop](./docs/monthly-ladder-desktop.png)
 ### Ladder Tablet/Phone
 ![Laddertablet](/./docs/monthly-ladder-tablet-phone.png)
-### Trophies Desktop
-![Trophiesdesktop](./docs/trophies-desktop.png)
-### Trophies Tablet/Phone
-![Trophiestablet](./docs/trophies-tablet-phone.png)
 ### Goals Desktop
 ![Goalsdesktop](./docs/weekly-goal-desktop.png)
 ### Goals Tablet/Phone
 ![Goalstablet](./docs/weekly-goal-tablet.png)
 
 
+# User Testing
+Once the major functionality had been implemented towards the end of the build, each team member presented the application to several peers for user testing. We categoriesed the different actions they should take (e.g create an account, log in, create a workout, set your weekly goal, etc), and recorded the results of these actions. The user testing revealed an unforseen display issue with the weekly goal widget on the dashboard, which was repaired shortly afterwards. A full breakdown of user testing results [can be found here](https://docs.google.com/spreadsheets/d/1tw-eoWQ5Yg2aMXyanKJRsfu4cTnMj7bmjz--hMtk_1E/edit?usp=sharing).
+
+
+# Planning vs Final Implementation  
+There are several discrepancies between our original blueprint and the final submission.
+### Goals
+We deemed giving "Goals" it's own page unnecessary, and instead displayed the weekly goal on the dashboard next to a button linking to the Update Goal page.
+### Types Of Exercises
+Due to time constraints we only implemented 4 major types of available exercises for fitness tracking (HIIT, Run, Swim, Weights). Many others, and the ability to create your own category will be implemented in a future sprint following submission. 
+### Ladder
+Initially we planned to implement a monthly ladder which reset each month. During the course of the build we decided to also include an "All Time" ladder, as well as several ladders specific to each exercise category. The all time ladder was implemented, and future versions will include the remaining ladders. 
+### Trophies
+We initially planned to award users "Trophies" based on certain achievements. Due to time constraints we opted to push the planned implementation of trophies to a future sprint following submission. 
+### Navigation
+We removed "Add Workout" and Goal from Nav, and instead included this on the Dashboard. 
 
 # Trello Board
-We've separated the build into Part A tasks, and Part B tasks. We've also further split out Part B into Front End and Back End lists. We've agreed that one team member will be primarily responsible for building the React application, while the other will be largely dedicated to the Rails app. To ensure clarity on what stage of the build each of us is up to, we have agreed to move the cards that we're currently working on into our respective "Working On..." lists as we progress through the project. 
+Initially we separated the build into Part A tasks, and Part B tasks. We also further split out Part B into Front End and Back End lists. We agreed that one team member was primarily responsible for building the React application, while the other was largely dedicated to the Rails API. To ensure clarity on what stage of the build each of us was up to, we agreed to move the cards that we were currently working on into our respective "Working On..." lists as we progressed through the project. We maintained communication throughout the project and when we encountered issues that required tandem manipulation (eg if the structure of the data stored in a model was changed, and the forms and api calls needed to be updated), we would work together on the problem until it was repaired and then move back into working on our respective cards. Overview of Trello workflow throughout the project can be seen visually below. 
+
+## Part A Workflow 
 ![Trello1](./docs/trello-shot-1.png)
 ![Trello2](./docs/trello-shot-2.png)
 ![Trello3](./docs/trello-shot-3.png)
+## Part B Workflow
+![Trello4](./docs/trello-shot1.png)
+![Trello5](./docs/trello-shot2.png)
+![Trello6](./docs/trello-shot3.png)
+![Trello7](./docs/trello-shot4.png)
